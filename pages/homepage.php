@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
+    <title>Project</title>
+    <meta name="description" content="Final Project">
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -16,7 +16,19 @@
 </head>
 
 <body>
+<style>
+.container
+{
+margin: 50px auto;
+  width: 640px;
+}
 
+body {
+  font: 13px/20px &quot;Lucida Grande&quot;, Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #0ca3d2;
+}
+</style>
 
 <h1>
     <?php
