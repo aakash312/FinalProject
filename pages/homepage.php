@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+ 
 <title>Project</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <meta name="description" content="Final Project">
 <meta name="author" content="SitePoint">
 
-<link rel="stylesheet" href="css/styles.css?v=1.0">
+
 
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,19 +17,7 @@
 </head>
 
 <body>
-<style>
-.container
-{
-margin: 50px auto;
- width: 640px;
-  font: 13px/20px &quot;Lucida Grande&quot;, Tahoma, Verdana, sans-serif;
-}
-body {
-font: 13px/20px &quot;Lucida Grande&quot;, Tahoma, Verdana, sans-serif;
-color: #404040;
-background: #0ca3d2;
-}
-</style>
+
 
 <h1>
 <?php
@@ -49,7 +38,7 @@ echo $data['site_name'];
       <label><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
 
-    <button type="submit">Login</button>
+    <button type="submit" class="btn btn-dark" >Login</button>
   </div>
 
 
