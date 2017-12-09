@@ -2,17 +2,17 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>Project</title>
-    <meta name="description" content="Final Project">
-    <meta name="author" content="SitePoint">
+<title>Project</title>
+<meta name="description" content="Final Project">
+<meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+<link rel="stylesheet" href="css/styles.css?v=1.0">
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -20,38 +20,37 @@
 .container
 {
 margin: 50px auto;
-  width: 640px;
-}
-
-body {
+ width: 640px;
   font: 13px/20px &quot;Lucida Grande&quot;, Tahoma, Verdana, sans-serif;
-  color: #404040;
-  background: #0ca3d2;
+}
+body {
+font: 13px/20px &quot;Lucida Grande&quot;, Tahoma, Verdana, sans-serif;
+color: #404040;
+background: #0ca3d2;
 }
 </style>
 
 <h1>
-    <?php
+<?php
 
     //this how to print some data;
-    echo $data['site_name'];
+echo $data['site_name'];
 
-    ?> </h1>
+  ?> </h1>
 
 <h1><a href="index.php?page=accounts&action=all">Show All Accounts</a></h1>
 <h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
 
 <form action="index.php?page=accounts&action=login" method="POST">
 
-    <div class="container">
-        <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="email" required>
-
-        <label><b>Password</b></label>
+<div class="container">
+<label><b>Username</b></label>
+<input type="text" placeholder="Enter Username" name="email" required>
+      <label><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
 
-        <button type="submit">Login</button>
-    </div>
+    <button type="submit">Login</button>
+  </div>
 
 
 </form>
