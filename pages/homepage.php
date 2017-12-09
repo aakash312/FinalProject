@@ -16,34 +16,31 @@
 <![endif]-->
 </head>
 
-<body>
+<body class="p-3 mb-2 bg-info text-white".bg-info >
 
 
-<h1>
-<?php
-
-    //this how to print some data;
-echo $data['site_name'];
-
-  ?> </h1>
-
-<center><h1><a href="index.php?page=accounts&action=all">Show All Accounts</a></h1></center>
-<center><h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1></center>
-
+<center><h1><a href="index.php?page=accounts&action=all" class="text-dark bg-info" .text-white>Display Accounts</a></h1></center>
+<center><h1><a href="index.php?page=tasks&action=all" class="text-dark bg-info" .text-white>Display Tasks</a></h1></center>
 <form class="form-group" action="index.php?page=accounts&action=login" method="POST">
-
-<div class="container">
+<div class="form-row align-items-center">
+    <div class="col-auto">
+<div class="container-fluid">
 <label><b>Username</b></label>
 <input class="form-control" type="text" placeholder="Enter Username" name="email" required>
       <label><b>Password</b></label>
         <input class="form-control" type="password" placeholder="Enter Password" name="password" required>
-
-    <button type="submit" class="btn btn-dark" >Login</button>
+<div class="container-fluid">
+  <button type="submit" class="btn btn-dark" >Login</button>
   </div>
+ 
+    </div>
+    </div>
+    </div>
+
 
 
 </form>
-<h1><a href="index.php?page=accounts&action=register">Register</a></h1>
+<center><h1><a href="index.php?page=accounts&action=register" class="text-dark bg-info" .text-white>Register</a></h1></center>
 
 
 <script src="js/scripts.js"></script>
