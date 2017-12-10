@@ -22,7 +22,7 @@
    
    <div class="container">
         <label><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="Enter Email" name="email" required
 
         <label><b> Name</b></label>
         <input type="text" placeholder="Enter First Name" name="fname" required>

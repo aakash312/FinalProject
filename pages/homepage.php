@@ -15,22 +15,31 @@
 <![endif]-->
 </head>
 
-<body class="p-3 mb-2 bg-info text-white".bg-info >
-
+<body class="p-3 mb-2 bg-info text-white".bg-info .mr-3>
+<center>
+<div  class="col-9 " class="jumbotron container-fluid">
+<div class="p-3 mb-2 bg-secondary text-dark" .bg-secondary >
+  <center><h1 class="display-3">Final Project!</h1>
+  <p class="lead"> <br>Attn: Prof.Kieth Willams</br> <br> Teaching Assistant: Ikjyot Singh Gujral </br> <br>Teaching Assistant: Brandon Major </br></p>
+  <hr class="my-4">
+  </center>
+</div>
+</div>
+</center>
 
 <center><h1><a href="index.php?page=accounts&action=all" class="text-dark bg-info" .text-white>Display Accounts</a></h1></center>
 <center><h1><a href="index.php?page=tasks&action=all" class="text-dark bg-info" .text-white>Display Tasks</a></h1></center>
 
 <form action="index.php?page=accounts&action=login" method="POST">
-
-<label><b>Username</b></label>
-<input  type="text" placeholder="Enter Username" name="email" required>
-      <label><b>Password</b></label>
-        <input  type="password" placeholder="Enter Password" name="password" required>
+<div class="form-group" class="form-row" class="row" div class="col">
+<center><label><b>Username</b></label><center>
+<center><input  type="text" placeholder="Enter Username" name="email" required> </center>
+      <center><label><b>Password</b></label></center>
+      <center>  <input  type="password" placeholder="Enter Password" name="password" required> </center>
   <button type="submit" class="btn btn-dark" >Login</button>
  
  
-    
+     </div>
 
 </form>
 <center><h1><a href="index.php?page=accounts&action=register" class="text-dark bg-info" .text-white>Register</a></h1></center>
