@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
+    <title>Final Project</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
@@ -16,9 +16,8 @@
 </head>
 
 <body>
-<h1>All Accounts</h1>
 
-<h1> HI</h1>
+
 
 <?php
 //this is how you print something
