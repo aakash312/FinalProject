@@ -37,7 +37,7 @@ class accountsController extends http\controller
 		$record = new account();
         /*$record->email = "kwilliam@njit.edu";
         $record->fname = "test2";
-        $record->lname = "cccc2";
+        $record->lname = "cccc2"
         $record->phone = "4444444";
         $record->birthday = "0";
         $record->gender = "male";
@@ -80,8 +80,8 @@ class accountsController extends http\controller
         //        $record = accounts::findUser($_POST['uname']);
         //print_r($_POST);
         $record= new account();
-		$record= accounts::findUserbyUsername($_POST['uname']);
-		//$checkpsw= accounts::checkPassword($_POST['psw'], $record->passowrd);
+		$record= accounts::findUserbyUsername($_POST['userID']);
+		$checkpsw= accounts::checkPassword($_POST['psw'], $record->passowrd);
 		print_r($record);
 		echo '1';
 		if($record==FALSE){
@@ -110,3 +110,4 @@ public static function logout()
 }
 }
 ?>
+
