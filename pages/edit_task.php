@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-  
+
 
         <?php $array = get_object_vars($data); ?>
 

@@ -1,4 +1,4 @@
-
+<?php include 'header.php' ?>
 <!doctype html>
 
 <html lang="en">
@@ -7,7 +7,7 @@
  
 <title>Final Project</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+ <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
 
 <meta name="description" content="Final Project">
 <meta name="author" content="SitePoint">
@@ -19,20 +19,29 @@
 </head>
 <style>
     body{
-        background: url("http://mdbootstrap.com/img/Photos/Others/img%20(42).jpg")
+
+        background-image: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg");
         no-repeat center center;
         background-size: cover;
     }
 
+
 </style>
 
-<body class="p-3 mb-2 bg-info text-white" .mr-3>
+<!--<body class="p-3 mb-2 bg-info text-white" .mr-3>-->
 <center>
 
 </center>
+<div class="container">
+    <div class="jumbotron">
+        <h2>Welcome to my Final Project!!</h2>
+        <p> Attn: Prof. Keith Willams  <br>TA: Ikjyot Singh Gujral <br>TA: Brandon Major<br></p>
+    </div>
 
-<center><h1><a href="index.php?page=accounts&action=all" >Display Accounts</a></h1></center>
-<center><h1><a href="index.php?page=tasks&action=all" >Display Tasks</a></h1></center>
+</div>
+
+
+
 
 
 <form action="index.php?page=accounts&action=login" method="POST">
@@ -48,7 +57,7 @@
 
 </form>
  <center><h1><a href="index.php?page=accounts&action=signup" >Register</a></h1></center>
-
+<center><h1><a href="index.php?page=accounts&action=all" > View Accounts</a></h1></center>
 
 <script src="js/scripts.js"></script>
 </body>
