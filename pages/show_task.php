@@ -1,81 +1,42 @@
-<!doctype html>
+<?php include 'header.php'; ?>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-
-    <title> Final Project</title>
-
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-<?php
-//this is how you print something  $data contains the record that was selected on the table.
-//print_r($data);
-?>
-
-<form action="index.php?page=accounts&action=logout" method="post" id="form3">
-	<button type="submit" form="form3" value="logout">Logout</button>
-</form>
+<article>
 
 
-<form action="index.php?page=tasks&action=update&id=<?php echo $data->id; ?> " method="post" id="form1">
-	<label><b>Owner Email</b></label>
-		<input type="text" name="owneremail" value="<?php echo $data->owneremail; ?>" required></br></br>
+    <?php  $array = get_object_vars($data);
+    $string ='index.php?page=tasks&action=test&id='; $string .= $array['id']; ?>
 
-<label><b>Owner ID</b></label>
-
-<input type="text" name="ownerid" value="<?php echo $data->ownerid; ?>"></br></br>
+    <form action="<?php echo $string?>" method="POST" name="form">
 
 
 
-<label><b>Created Date</b></label>
+        <div class="container">
+            <h1>Show Task</h1>
 
-<input type="text" name="createddate" value="<?php echo $data->createddate; ?>"></br></br>
+            <label><b>createddate</b></label>
+            <input type="text" value="<?php echo $array['createddate']?>" name="createddate" readonly>
 
+            <br>
 
+            <label><b>duedate</b></label>
+            <input type="text" value="<?php echo $array['duedate'] ?>" name="duedate" readonly>
 
-<label><b>Due Date</b></label>
+            <br>
 
-<input type="text" name="duedate" value="<?php echo $data->duedate; ?>"></br></br>
+            <label><b>message</b></label>
+            <textarea name="message" cols="50" rows="5" readonly><?php echo $array['message']?> </textarea>
 
+            <br>
 
+            <label><b>isdone</b></label>
+            <input type="text" value="<?php echo $array['isdone']?>" name="isdone" readonly>
 
-<label><b>Message</b></label>
+            <br>
 
-<input type="text" name="message" value="<?php echo $data->message; ?>"></br></br>
+            <input type="submit" name="btSubmit" value="Edit">
+            <input type="submit" name="btSubmit" value="Delete">
 
-
-
-<label><b>isDone</b></label>
-
-<input type="text" name="isdone" value="<?php echo $data->isdone; ?>" ></br></br>
-
-
-
-
-
-    <button type="submit" form="form1" value="delete">Update</button>
-
-</form>
+</article>
 
 
 
-
-
-<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form2">
-	<button type="submit" form="form2" value="delete">Delete</button>
-
-</form>
-
-
-
-<script src="js/scripts.js"></script>
-</body>
-</html>

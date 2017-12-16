@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Registration</title>
+    <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,36 +18,62 @@
 <body>
 
 
-<form action="index.php?page=accounts&action=register" method="POST">
-   
-   <div class="container">
-        <label><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required
+<h1>
+    <?php
 
-        <label><b> Name</b></label>
-        <input type="text" placeholder="Enter First Name" name="fname" required>
+    //this how to print some data;
+    echo $data['site_name'];
 
-        <label><b>Surname </b></label>
-        <input type="text" placeholder="Enter Last Name" name="lname" required>
+    ?>
 
-        <label><b>Mobile Number</b></label>
-        <input type="text" placeholder="Enter Phone number" name="phone" required>
-        <label><b>Date of Birth</b></label>
-        <input type="text" placeholder="Enter Birthday" name="bday" required>
+    <h1>Register</h1>
 
-        <label><b>Gender</b></label>
-        <input type="text" placeholder="Enter Gender" name="gender" required>
+    <form action="index.php?page=accounts&action=store" method="POST">
 
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        <button type="submit">Register</button>
+        <div class="container">
+            <div>
+            <label><b>Email-ID</b></label>
+            <input type="text" placeholder="Enter email" name="email" required>
+            </div>
+            <br>
 
-</div>
-    
-   
-</form>
+            <label><b>Firstname</b></label>
+            <input type="text" placeholder="Enter firstname" name="fname" required>
+
+            <br>
+
+            <label><b>Lastname</b></label>
+            <input type="text" placeholder="Enter lastname" name="lname" required>
+
+            <br>
+
+            <label><b>Phone</b></label>
+            <input type="text" placeholder="Enter phone number" name="phone" required>
+
+            <br>
+
+            <label><b>Date Of Birth</b></label>
+            <input type="text" placeholder="Enter birthday" name="birthday" required>
+
+            <br>
+
+            <label><b>Gender</b></label>
+            <input type="text" placeholder="Enter gender" name="gender" required>
+
+            <br>
+
+            <label><b>Password</b></label>
+            <input type="text" placeholder="Enter gender" name="password" required>
+
+            <button type="submit">Submit</button>
+        </div>
 
 
-<script src="js/scripts.js"></script>
+
+    </form>
+
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
+
