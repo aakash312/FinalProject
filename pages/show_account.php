@@ -2,14 +2,21 @@
 <!doctype html>
 
 <html lang="en">
+<style>
+    body{
+        background-image: url("https://mdbootstrap.com/img/Photos/Others/architecture.jpg");
+        no-repeat center center;
+        background-size: cover;
+    }
+</style>
 <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
+    <title>Final Project</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <!--0 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,9 +24,10 @@
 </head>
 
 <body>
-<?php $array = get_object_vars($data); //print_r($array);
-$string ='index.php?page=accounts&action=test&id='; $string .= $array['id']; ?>
+<?php  $array = get_object_vars($data); //print_r($array);
+$string ='index.php?page=accounts&action=test&id=';// $string .= $array['id']; ?>
 
+<center>
 <form action="<?php echo $string?>" method="POST" name="form">
 
 
@@ -65,7 +73,7 @@ $string ='index.php?page=accounts&action=test&id='; $string .= $array['id']; ?>
 
 </form>
 
-
+    </center>
 
 
 

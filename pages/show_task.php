@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 
-<article>
 
 
     <?php  $array = get_object_vars($data);
@@ -36,7 +35,6 @@
             <input type="submit" name="btSubmit" value="Edit">
             <input type="submit" name="btSubmit" value="Delete">
 
-</article>
 
 
 
