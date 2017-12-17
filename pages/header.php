@@ -20,6 +20,7 @@
             <li><a href="https://web.njit.edu/~ab997/FinalP/">Home</a></li>
             <li><a href="https://github.com/aakash312">Github Profile </a></li>
             <li><a href="https://google.com">Search</a></li>
+            <li><a href="https://web.njit.edu/~ab997/FinalP/index.php?page=accounts&action=all">Display Accounts</a></li>
         </ul>
     </div>
 </nav>

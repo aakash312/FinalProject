@@ -57,7 +57,7 @@
 
 </form>
  <center><h1><a href="index.php?page=accounts&action=signup" >Register</a></h1></center>
-<center><h1><a href="index.php?page=accounts&action=all" > View Accounts</a></h1></center>
+ <!-- <center><h1><a href="index.php?page=accounts&action=all" > View Accounts</a></h1></center>-->
 
 <script src="js/scripts.js"></script>
 </body>
