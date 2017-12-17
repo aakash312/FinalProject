@@ -35,7 +35,7 @@
 <div class="container">
     <div class="jumbotron">
         <h2>Welcome to my Final Project!!</h2>
-        <p> Attn: Prof. Keith Willams  <br>TA: Ikjyot Singh Gujral <br>TA: Brandon Major<br></p>
+        <p> Attn: Prof. Keith Willams  <br>Teaching Assistant: Ikjyot Singh Gujral <br>Teaching Assistant: Brandon Major<br></p>
     </div>
 
 </div>
@@ -62,3 +62,6 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
+<?php
+include 'footer.php';
+?>
